@@ -5,7 +5,7 @@ def day04():
             numbers = line.strip().split(",")
             firstNums = numbers[0].split('-') 
             secondNums = numbers[1].split('-') 
-            firstNums = set(range(int(firstNums[0]), int(firstNums[1]) + 1))
+            firstNums = set(range(int(firstNums[0]), int(firstNums[1]) + 1)) # need to add 1 because it goes to n-1 on the range
             secondNums = set(range(int(secondNums[0]), int(secondNums[1]) + 1))
             if (firstNums.issubset(secondNums) or secondNums.issubset(firstNums)):
                 total += 1
@@ -26,8 +26,4 @@ def day04():
 
 
     print(f'The answer for the general overlap is: {total}')
-
-    
-def between(number, lower, upper):
-    return lower <= number and number <= upper
     
