@@ -4,6 +4,7 @@ from Day03.solution import day03
 from Day04.solution import day04
 from Day05.solution import day05
 from Day06.solution import day06
+from Day07.solution import day07
 
 option = input('Which day would you like to run?\n')
 
@@ -13,7 +14,8 @@ days = {
         '03': day03,
         '04': day04,
         '05': day05,
-        '06': day06
+        '06': day06,
+        '07': day07
     }
 
 def notFound():
